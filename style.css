@@ -1,0 +1,545 @@
+body{
+    font-family: 'Open Sans', sans-serif;;
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho cabecalho cabecalho cabecalho"
+                         ". . . . ."
+                         ". content-01 . menu-lateral ."
+                         ". . . menu-lateral ."
+                         ". content-02 . menu-lateral ."
+                         ". . . . ."
+                         ". content-03 . . ."
+                         ". . . . ."
+                         "rodape rodape rodape rodape rodape";
+
+   grid-template-rows: 70px 56px 696px 40px 696px 40px 696px 64px 70px;
+   width: 1320px;
+   height: 100vh;
+   background-color: #F5F5F5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: #FFFFFF;
+    width: 1340px;
+    height: 70px;
+}
+
+.cabecalho > img{
+    padding-left: 130px;
+}
+
+.menu-cabecalho{
+    padding-right: 90px;
+}
+
+.menu-cabecalho > a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+.titulo-content{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 25px 0px 0px 0px;
+    margin-left: 24px;
+}
+
+.status{
+    font-size: 12px;
+    font-weight: 400;
+    color: #929292;
+    padding: 0px 374px 0px 24px;
+}
+
+.paragrafo{
+    font-size: 14px;
+    font-weight: 400;
+    color: #545454;
+    padding: 24px 24px 0 24px;
+}
+
+.botao-continuar{
+    margin: -05px 24px 40px 552px;
+    width: 154px;
+    height: 43px;
+    border-radius: 20px;
+    border: 1px solid #FE0078;
+    background-color: #FFFFFF;
+    color: #545454;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    color: #545454;
+}
+
+a:hover, .botao-continuar:hover{
+    background-color: #FE0078;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.content-01{
+    grid-area: content-01;
+    background-color: #FFFFFF;
+    width: 730px;
+    height: 696px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 70px 45px 40px 100px;
+}
+
+.content-02{
+    grid-area: content-02;
+    background-color: #FFFFFF;
+    width: 730px;
+    height: 696px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0px 45px 40px 100px;
+}
+
+.content-03{
+    grid-area: content-03;
+    background-color: #FFFFFF;
+    width: 730px;
+    height: 696px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0px 45px 0px 100px;
+}
+
+.menu-lateral{
+    grid-area: menu-lateral;
+    background-color: #FFFFFF;
+    width: 380px;
+    height: 1400px;
+    margin-top: 16px;
+    margin-right: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu-lateral > h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+    border-left: 3px solid #FE0078;
+    padding-left: 10px;
+}
+
+#pesquisa{
+    color: #545454;
+    font-size: 14px;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    height: 52px;
+    width: 335px;
+    margin: 20px 25px 0 20px;
+    padding-left: 05px;
+}
+
+#pesquisa:hover{
+    border: 2px solid #FE0078;
+    cursor: pointer;
+}
+
+.menu-categorias{
+    display: grid;
+    grid-template-columns: 300px 25px;
+    align-items: end;
+    margin: 11px 0 0 20px;
+    color: #545454;
+    font-size: 14px;
+}
+
+.menu-categorias > p{
+    padding-bottom: 15px;
+}
+
+.linha01, .linha02, .linha03, .linha04, .linha05, .linha06{
+    border-bottom: 3px dotted #EEEEEE;
+}
+
+.linha01:hover, .linha02:hover, .linha03:hover, .linha04:hover, .linha05:hover, .linha06:hover{
+    color: #FE0078;
+    cursor: pointer;
+    border-bottom: 3px dotted #FE0078;
+}
+
+.numeros{
+    justify-self: end;
+    color: #545454;
+    font-size: 14px;
+}
+
+.publicidade{
+    background-color: #EEEEEE;
+    max-width: 340px;
+    max-height: 240px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    color: #545454;
+    padding: 96px 0 95px 0px;
+}
+
+.anuncio01{
+    margin: 30px 20px 0 20px;
+    text-align: center;
+}
+
+.anuncio02{
+    margin: 25px 20px 0 20px;
+}
+
+.anuncio03{
+    margin: 25px 20px 10px 20px;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: #222222;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    width: 1340px;
+    height: 70px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.rodape > p{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* página leia mais */ 
+
+.pagina-02{
+    font-family: 'Open Sans', sans-serif;;
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho cabecalho cabecalho cabecalho"
+                         ". . . . ."
+                         ". content-01 . menu-lateral ."
+                         ". . . menu-lateral ."
+                         ". content-02 . menu-lateral ."
+                         ". . . . ."
+                         ". . . . ."
+                         "rodape rodape rodape rodape rodape";
+
+   grid-template-rows: 70px 56px 696px 40px 696px 300px 64px 70px;
+   width: 1320px;
+   height: 100vh;
+   background-color: #F5F5F5;
+}
+
+.lista{
+    font-size: 14px;
+    font-weight: 400;
+    color: #545454;
+    margin-left: 48px;
+}
+
+.content-leiaMais{
+    background-color: #FFFFFF;
+    width: 730px;
+    height: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 70px 45px 30px 100px;
+}
+
+.italico{
+    font-style: italic;
+}
+
+form{
+    width: 730px;
+    height: 445px;
+    font-size: 14px;
+    margin: 0px 0px -95px 100px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px 35px 10px 100px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-areas: "form-nome form-email"
+                         "form-comments form-comments";
+
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 42px 350px;
+    gap: 50px 25px;
+}
+
+.form-nome{
+    grid-area: form-nome;
+}
+
+
+.formulario > p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-nome > #nome{
+    display: flex;
+    width: 355px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+#nome:hover{
+    border: 2px solid #FE0078;
+    cursor: pointer;
+}
+
+.form-email{
+    grid-area: form-email;
+}
+
+.form-email > #e-mail{
+    display: flex;
+    width: 350px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+#e-mail:hover{
+    border: 2px solid #FE0078;
+    cursor: pointer;
+}
+
+.form-comments{
+    grid-area: form-comments;
+}
+
+.form-comments > #comentarios{
+    display: flex;
+    width: 725px;
+    height: 180px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+#comentarios:hover{
+    border: 2px solid #FE0078;
+    cursor: pointer;
+}
+
+.botao-comentar{
+    margin: 0 0px 0px 675px;
+    width: 154px;
+    height: 43px;
+    border-radius: 20px;
+    border: 1px solid #FE0078;
+    background-color: #FFFFFF;
+    color: #545454;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.botao-comentar:hover{
+    background-color: #FE0078;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/* Página Contato */
+
+.pagina-contato{
+    font-family: 'Open Sans', sans-serif;;
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho cabecalho cabecalho cabecalho"
+                         ". . . . ."
+                         ". content-contato . menu-lateral ."
+                         ". content-contato . menu-lateral ."
+                         ". content-contato . menu-lateral ."
+                         ". . . . ."
+                         ". . . . ."
+                         "rodape rodape rodape rodape rodape";
+
+   grid-template-rows: 70px 56px 696px 40px 696px 56px 56px 70px;
+   width: 1320px;
+   height: 100vh;
+   background-color: #F5F5F5;
+}
+
+.content-contato{
+    grid-area: content-contato;
+    background-color: #FFFFFF;
+    width: 730px;
+    height: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 70px 45px 40px 100px;
+}
+
+.titulo-contato{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 45px;
+    padding-top: 35px;
+}
+
+.subtitulo{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 45px 16px 40px;
+}
+
+.content-contato > .paragrafo{
+    margin: -15px 60px 30px 20px;
+}
+
+.content-contato > .titulo{
+    font-style: 14px;
+    font-weight: 700;
+    margin: 5px 45px 10px 45px;
+}
+
+.content-contato > p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px 45px 20px 45px;
+}
+
+.localizacao{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 45px;
+}
+
+.localizacao > .titulo{
+    padding-left: 12px;
+}
+
+.telefone{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 45px;
+}
+
+.telefone > .titulo{
+    padding-left: 12px;
+}
+
+.suporte{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 45px;
+}
+
+.suporte > .titulo{
+    padding-left: 12px;
+}
+
+.form-contato{
+    display: grid;
+    grid-template-areas: "formcontato-nome formcontato-email"
+                         "formcontato-subject formcontato-subject"
+                         "formcontato-comments formcontato-comments";
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 42px 42px 682px;
+    gap: 50px 25px;
+    margin-left: -60px;
+}
+
+.formcontato-nome{
+    grid-area: formcontato-nome;
+}
+
+.formcontato-nome> #nome-contato{
+    width: 305px;
+    height: 37px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+#nome-contato:hover{
+    border: 2px solid #FE0078;
+    cursor: pointer;
+}
+
+.formcontato-email{
+    grid-area: formcontato-email;
+}
+
+.formcontato-email > #email-contato{
+    width: 305px;
+    height: 37px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+#email-contato:hover{
+    border: 2px solid #FE0078;
+    cursor: pointer;
+}
+
+.formcontato-subject{
+    grid-area: formcontato-subject;
+}
+
+.formcontato-subject > #assunto-contato{
+    width: 647px;
+    height: 37px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+#assunto-contato:hover{
+    border: 2px solid #FE0078;
+    cursor: pointer;
+}
+
+.formcontato-comments{
+    grid-area: formcontato-comments;
+}
+
+.formcontato-comments > #comentarios-contato{
+    width: 650px;
+    height: 165px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+#comentarios-contato:hover{
+    border: 2px solid #FE0078;
+    cursor: pointer;
+}
+
+.botao-enviar{
+    margin: 80px 0px 0px 542px;
+    width: 154px;
+    height: 43px;
+    border-radius: 20px;
+    border: 1px solid #FE0078;
+    background-color: #FFFFFF;
+    color: #545454;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.botao-enviar:hover{
+    background-color: #FE0078;
+    color: #FFFFFF;
+    cursor: pointer;
+}
